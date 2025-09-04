@@ -39,7 +39,7 @@
   </head>
   <body>
     <header>
-        <!-- navbar section -->
+      <!-- navbar section -->
       <div class="navbar bg-[#badeff42] shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
@@ -63,66 +63,144 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-               <li>
-                <a href="" class=""><i class="fa-solid fa-circle-question"></i> FAQ</a>
-            </li>
-            <li>
-                <a href="" class=""><i class="fa-solid fa-book-open"></i> Learn</a>
-            </li>
-            <li>
-                <a href="" class=""><i class="fa-solid fa-right-from-bracket"></i> LogOut</a>
-            </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-circle-question"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-book-open"></i> Learn</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-right-from-bracket"></i> LogOut</a
+                >
+              </li>
             </ul>
           </div>
           <a class="flex items-center gap-1">
             <span class="text-lg font-bold">English</span>
-            <img src="./assets/logo.png" alt="">
+            <img src="./assets/logo.png" alt="" />
             <span class="font-bangla text-lg font-semibold">জানালা</span>
           </a>
         </div>
         <div class="navbar-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1 space-x-4">
             <li>
-                <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-circle-question"></i> FAQ</a
+              >
             </li>
             <li>
-                <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-book-open"></i> Learn</a
+              >
             </li>
             <li>
-                <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-right-from-bracket"></i> LogOut</a>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-right-from-bracket"></i> LogOut</a
+              >
             </li>
-
           </ul>
         </div>
       </div>
 
       <!-- banner section -->
-      <section class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
-        <div class="content flex-1 ">
-            <div class="">
-                <h2 class="text-4xl font-bold mb-8 "><span class="text-sky-400">English</span> is Easy!!</h2>
-            <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-            <br>
-            </div>
-            <input type="text" placeholder="Enter your name" class="input mb-4" />
-            <input type="password" name="" placeholder=".................."  id="" class="input mb-4">
-<br>
-            <button class="btn btn-primary">Get Started</button>
+      <section
+        class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto"
+      >
+        <div class="content flex-1">
+          <div class="">
+            <h2 class="text-4xl font-bold mb-8">
+              <span class="text-sky-400">English</span> is Easy!!
+            </h2>
+            <p class="font-bangla">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              যাবে অন্য একটি Level এ
+            </p>
+            <br />
+          </div>
+          <input type="text" placeholder="Enter your name" class="input mb-4" />
+          <input
+            type="password"
+            name=""
+            placeholder=".................."
+            id=""
+            class="input mb-4"
+          />
+          <br />
+          <button class="btn btn-primary">Get Started</button>
         </div>
         <div class="image flex-1">
-            <img src="./assets/hero-student.png" alt="">
+          <img src="./assets/hero-student.png" alt="" />
         </div>
       </section>
     </header>
 
     <main>
-        <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400">Let's</span> Learn Vocabularies</h2>
+      <h2 class="text-4xl font-bold mb-8 text-center">
+        <span class="text-sky-400">Let's</span> Learn Vocabularies
+      </h2>
 
-        <div id="level-container">
+      <div
+        id="level-container"
+        class="flex gap-5 flex-wrap justify-center"
+      ></div>
+
+      <section class="flex justify-center mt-8">
+        <div class="join">
+          <div>
+            <label class="input validator join-item">
+              
+              <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+            </label>
             
+          </div>
+          <button id="btn-search" class="btn btn-primary join-item">Search</button>
         </div>
+      </section>
+
+      <section
+        id="spinner"
+        class="flex justify-center items-center py-10 hidden"
+      >
+        <span class="loading loading-bars loading-xl"></span>
+      </section>
+
+      <section
+        id="word-container"
+        class="bg-gray-100 p-10 gap-3 w-11/12 mx-auto my-10 grid md:grid-cols-3"
+      >
+        <div
+          class="text-center font-bangla col-span-full rounded-xl py-10 space-y-6"
+        >
+          <p class="text-xl font-medium text-gray-400">
+            আপনি এখনো কোন Lesson Select করেন নি
+          </p>
+          <h2 class="text-4xl font-bold">একটি Lesson Select করুন।</h2>
+        </div>
+      </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class="space-y-5"></div>
+
+          <div class="modal-action">
+            <form method="dialog" class="">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-primary">Complete Learning</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <footer></footer>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
